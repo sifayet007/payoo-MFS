@@ -1,4 +1,12 @@
 // console.log("clicked button");
-document.getElementById("login-btn").addEventListener("click", function () {
-  console.log("login button clicked");
-});
+//search : form submit reloading the page
+// step 1: set event handlers
+document
+  .getElementById("login-btn")
+  .addEventListener("click", function (event) {
+    //step 2: prevent default behavior (prevent reloading browser)
+    event.preventDefault();
+    console.log("login button clicked");
+    const phoneNumber = document.getElementById("phone-number").value;
+    console.log(phoneNumber);
+  });
