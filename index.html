@@ -24,36 +24,32 @@
         </div>
 
         <form action="" class="bg-white w-full p-8 rounded-3xl">
-          <div class="space-y-4 w-full">
-            <div class="">
-              <label for="" class="text-[#080808] font-medium"
-                >Mobile Number</label
-              >
-              <br />
-              <input
-                class="border-none py-2 pl-5 bg-[#F4F5F7] rounded-full w-full mt-3 hover:scale-105 transition-transform"
-                type="text"
-                name=""
-                id=""
-                placeholder="Enter your number"
-              /><br />
-            </div>
-            <label for="" class="text-[#080808] font-medium"> 4 Digit pin</label
-            ><br />
-            <input
-              class="border-none py-2 pl-5 bg-[#F4F5F7] rounded-full w-full mt-3 hover:scale-105 transition-transform"
-              type="password"
-              name=""
-              id="input-password"
-              autocomplete="off"
-              placeholder="Enter 4 Digit pin"
-            /><br />
-            <input
-              type="button"
-              value="Login"
-              class="btn w-full rounded-full bg-[#0874F2] text-white hover:scale-95 transition-transform"
-            />
-          </div>
+          <label for="" class="text-[#080808] font-medium">Mobile Number</label>
+          <br />
+          <input
+            class="border-none py-2 pl-5 bg-[#F4F5F7] rounded-full w-full mt-3 hover:scale-105 transition-transform mb-4"
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter your number "
+            required
+          />
+
+          <label for="" class="text-[#080808] font-medium"> 4 Digit pin</label>
+          <input
+            class="border-none py-2 pl-5 bg-[#F4F5F7] rounded-full w-full mt-3 hover:scale-105 transition-transform"
+            type="password"
+            name=""
+            id="input-password"
+            autocomplete="off"
+            required
+            placeholder="Enter 4 Digit pin"
+          /><br />
+          <button
+            class="btn w-full rounded-full bg-[#0874F2] text-white hover:scale-95 transition-transform mt-4"
+          >
+            Login
+          </button>
         </form>
       </div>
     </main>
