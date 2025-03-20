@@ -17,13 +17,13 @@
         class="w-[460px] h-[700px] bg-[#F4F5F7] rounded-3xl flex justify-center items-center flex-col px-5"
       >
         <div class="relative flex justify-center">
-          <span><img src="assets/bg1.png" alt="" /></span>
+          <span><img src="../assets/bg2.svg" alt="" /></span>
           <span class="absolute top-5"
-            ><img src="assets/Group.png" alt=""
+            ><img src="../assets/Group.png" alt=""
           /></span>
         </div>
 
-        <form action="" class="bg-white w-full p-8 rounded-3xl shadow-2xl">
+        <form action="" class="bg-white w-full p-8 rounded-3xl shadow-md">
           <!-- number -->
           <label for="" class="text-[#080808] font-medium">Mobile Number</label>
           <br />
@@ -34,6 +34,7 @@
             id="phone-number"
             placeholder="Enter your number "
             required
+            title="Enter your number"
           />
 
           <label for="" class="text-[#080808] font-medium"> 4 Digit pin</label>
@@ -42,10 +43,11 @@
             class="border-none py-2 pl-5 bg-[#F4F5F7] rounded-full w-full mt-3 hover:scale-105 transition-transform"
             type="password"
             name=""
-            id="input-password"
+            id="pin-number"
             autocomplete="off"
             required
             placeholder="Enter 4 Digit pin"
+            title="Enter 4 Digit pin"
           /><br />
           <button
             id="login-btn"
@@ -56,6 +58,7 @@
         </form>
       </div>
     </main>
-    <script src="js/login.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/login1.js"></script>
   </body>
 </html>
