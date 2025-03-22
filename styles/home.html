@@ -29,16 +29,18 @@
             </div>
             <!-- add money or cush out container -->
             <div class="bg-white p-5 mt-5 space-x-4 text-center">
-              <div class="btn p-10">
+              <div id="add-money-btn" class="btn p-10">
                 <img src="/assets/money1.png" alt="" />
                 <button>Add Money</button>
               </div>
-              <div class="btn p-10">
+              <div id="cush-out-btn" class="btn p-10">
                 <img src="/assets/send1.png" alt="" />
                 <button>Cush Out</button>
               </div>
             </div>
+            <!-- add money -->
             <form
+              id="add-money"
               action=""
               class="bg-white w-full p-8 rounded-3xl shadow-md mt-9"
             >
@@ -73,7 +75,47 @@
                 id="button-add-money"
                 class="btn w-full rounded-full bg-[#0874F2] text-white hover:scale-95 transition-transform mt-4"
               >
-                Login
+                Add Money
+              </button>
+            </form>
+            <!-- cush Out -->
+            <form
+              id="cush-out-money1"
+              action=""
+              class="bg-white w-full p-8 rounded-3xl shadow-md mt-9 hidden"
+            >
+              <!-- Amount -->
+              <label for="" class="text-[#080808] font-medium">Cush Out</label>
+              <br />
+              <input
+                class="border-none py-2 pl-5 bg-[#F4F5F7] rounded-full w-full mt-3 hover:scale-105 transition-transform mb-4 outline-none"
+                type="text"
+                name=""
+                id="cush-out-money"
+                placeholder="Cush Out Money"
+                required
+                title="Amount"
+              />
+
+              <label for="" class="text-[#080808] font-medium">
+                4 Digit pin</label
+              >
+              <!-- password -->
+              <input
+                class="border-none py-2 pl-5 bg-[#F4F5F7] rounded-full w-full mt-3 hover:scale-105 transition-transform outline-none"
+                type="password"
+                name=""
+                id="cush-out-pin"
+                autocomplete="off"
+                required
+                placeholder="Enter 4 Digit pin"
+                title="Enter 4 Digit pin"
+              /><br />
+              <button
+                id="button-cush-out"
+                class="btn w-full rounded-full bg-[#0874F2] text-white hover:scale-95 transition-transform mt-4 outline-none"
+              >
+                Cush Out
               </button>
             </form>
           </div>
@@ -81,6 +123,8 @@
       </div>
     </main>
     <script src="../js/home.js"></script>
+    <script src="/js/cashOut.js"></script>
+    <script src="/js/feature.js"></script>
     <!-- <script src="/js/addMoney.js"></script> -->
   </body>
 </html>

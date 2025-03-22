@@ -10,5 +10,7 @@ document
       const addInputBalance = parseFloat(balance);
       const newBalance = addInputMoney + addInputBalance;
       document.getElementById("account-balance").innerText = newBalance;
+    } else {
+      alert("Failed to add money please try again");
     }
   });
